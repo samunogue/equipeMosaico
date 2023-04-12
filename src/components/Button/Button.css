@@ -1,0 +1,79 @@
+@media screen and (max-width:600px) {
+    .button-copiar-pix{
+        margin-top: 5vh;
+        width: 80%;
+        padding: 2vh 0vw;
+        background-color: #3BEE6D;
+        font-size: 2rem;
+        font-weight: 600;
+        border-radius: 5px;
+        font-family: 'Barlow', 'sans-serif';
+    }
+    .onClick-button{
+        background-color: aqua;
+        animation: 1s agitar;
+    }
+    @keyframes agitar {
+        0%{
+            position: relative;
+            bottom: 0vh;
+        }
+        25%{
+            position: relative;
+            bottom:  3vh;
+        }
+        50%{
+            position: relative;
+            bottom: 0vh;
+        }
+        75%{
+            position: relative;
+            bottom:  3vh;
+        }
+        100%{
+            position: relative;
+            bottom: 0vh;
+        }
+    }
+}
+@media screen and (min-width:900px) {
+    .button-copiar-pix{
+        position: relative;
+        bottom: 10vh;
+        right: 20vw;
+        width: 30%;
+        padding: 2vh 0vw;
+        background-color: #3BEE6D;
+        font-size: 2rem;
+        font-weight: 600;
+        border-radius: 5px;
+        font-family: 'Barlow', 'sans-serif';
+        transition: all 1s;
+    }
+    .onClick-button{
+        background-color: aqua;
+        animation: 1s agitar;
+    }
+    @keyframes agitar {
+        0%{
+            position: relative;
+            bottom: 10vh;
+        }
+        25%{
+            position: relative;
+            bottom:  15vh;
+        }
+        50%{
+            position: relative;
+            bottom: 10vh;
+        }
+        75%{
+            position: relative;
+            bottom:  15vh;
+        }
+        100%{
+            position: relative;
+            bottom: 10vh;
+        }
+    }
+}

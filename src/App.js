@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { Logo } from './components/Logo/Logo.jsx';
+import { Dados } from './components/DadosPix/DadosPix.jsx';
+import { Button } from './components/Button/Button';
+import { QrCode } from '../src/components/QrCode/Qrcode.jsx';
+import iconeQrCode from '../src/assets/qrcode.jpeg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <Logo />
+      <div className='box-qrcode-dados'>
+        <QrCode imgQrcode={iconeQrCode} />
+        <Dados />
+      </div>
+      <Button texto={"Copiar Chave Pix"}/>
+    </main>
   );
 }
 

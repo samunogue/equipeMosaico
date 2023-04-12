@@ -1,0 +1,57 @@
+@media screen and (max-width:600px) {
+    .section-dados{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4vh; 
+        color: white;
+        font-family: 'Barlow', sans-serif;
+    }
+    .titulo-dados{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .box-dados{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4vw;
+        font-size: 1.8rem;
+    }
+    .icone-dados{
+        width: 15%;
+    }
+}
+@media screen and (min-width:900px) {
+    .section-dados{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5vh; 
+        color: white;
+        font-family: 'Barlow', sans-serif;
+    }
+    .titulo-dados{
+        margin-left: 5vw;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .box-dados{
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2vw;
+        font-size: 2.3rem;
+    }
+    .icone-dados{
+        width: 10%;
+    }
+}
