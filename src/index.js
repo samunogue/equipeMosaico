@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Route path="/" exact component={App} />
+      <Route path="/loaderio-ba5002eb4788f713b232ba5fc777ae6f"  component={App} />
+  </Router>
   </React.StrictMode>
 );
 
